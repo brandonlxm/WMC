@@ -120,7 +120,7 @@ footer {
         <!-- Dropdown menu for available animals -->
         <form onchange="selectAnimal()">
             <label for="animal-dropdown">Filter by Species:</label>
-            <select id="animal-dropdown">
+            <select id="animal-dropdown" onchange="selectAnimal()">
                 <option value="All">All</option>
                 <option value="dogs">Dogs</option>
                 <option value="cats">Cats</option>
