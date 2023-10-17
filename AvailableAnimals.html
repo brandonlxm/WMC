@@ -114,6 +114,12 @@ footer {
             }
          
     }
+    // Add event listener to the dropdown
+    var animalDropdown = document.getElementById("animal-dropdown");
+    animalDropdown.addEventListener("change", selectAnimal);
+
+    // Set the initial selected option text to "All"
+    animalDropdown.options[0].text = "All";
     </script>
 
     <main>
