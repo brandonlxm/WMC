@@ -116,6 +116,20 @@ footer {
     }
     </script>
     <main>
+
+        <!-- Dropdown menu for available animals -->
+        <form onchange="selectAnimal()">
+            <label for="animal-dropdown">Filter by Species:</label>
+            <select id="animal-dropdown">
+                <option value="All">All</option>
+                <option value="dogs">Dogs</option>
+                <option value="cats">Cats</option>
+                <option value="others">Others</option>
+            </select>
+        </form>
+
+        <!--Each Available pet's name and intro-->
+
         <section class="animal-profile">
             <img src="assets/images/Max_dog.jpg" alt="Max Dog">
             <h2><a href="Profilepage.html">Max</a></li></h2>
