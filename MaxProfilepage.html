@@ -3,144 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Profile</title>
+    <title>Pet Profile - WoofMeow Center</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Additional CSS specific to the pet profile page */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #92c292;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.animal-profile {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.animal-profile img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+        .back {
+            padding: 30px 340px;
+            padding-bottom: 10px;
         }
 
-        header {
-            background-color: #92c292;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav a {
+        .back button {
+            padding: 5px 13px;
             text-decoration: none;
-            color: #fff;
-            font-weight: bold;
+            color: rgb(255, 255, 255);
+            background-color: #5d6189;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
         }
 
-        /* Styling for homepage (index.html) */
-        #intro {
-            text-align: center;
-            padding: 50px;
-            background-color: #fff;
-            margin: 20px;
-            border-radius: 5px;
+        .back button:hover {
+            background-color:#5d6189c2;
+        }
+        
+        .pettags {
+            display: flex;
+            gap: 8px;
+            padding-bottom: 10px;
+            padding-top: 2px;
         }
 
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
+        .pettags button {
+            font-size: 10px;
+            padding: 3px 10px;
+            background-color: rgb(180, 200, 210);
+            border: none;
+            border-radius: 10px;
+        }
+
+        .petprofile {
+            font-size: 13px;
+            display: flex;
+            margin: 15px 340px;
+            margin-top: 0px;
+            background-color: rgba(0, 0, 0, 0.058);
+            padding: 20px 20px;
+            border-radius: 30px;
+            gap: 20px;
+        }
+
+        .pet-details p {
+            color: #392e2c;
+        }
+
+        .applycontainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
+        
+        #apply-button {
+            padding: 5px 15px;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
+            color: rgb(255, 255, 255);
+            background-color: #b86648;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
         }
 
-        .cta-button:hover {
-            background-color: #555;
+        #apply-button:hover {
+            background-color: #b86648c2;
         }
 
-        /* Styling for footer */
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
+        #maxpic {
+            border-radius: 25px;
         }
 
-        /* Additional CSS styles go here */
-        .pet-profile {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            margin: 20px;
-        }
-
-        .pet-image {
-            max-width: 100%;
-        }
-
-        .pet-details {
-            margin-top: 20px;
-        }
-
-        .apply-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-
-        .apply-button:hover {
-            background-color: #555;
+        .moredetails {
+            padding-top: 7px;
+            display: flex;
+            gap: 25px;
+            color: #392e2c;
         }
     </style>
 </head>
-<body>
-    <img src="assets/images/logo.png" alt="logo">
+<body> 
     <header>
+        <img src="https://i.ibb.co/r6zTD1X/wooflogo.png" alt="logo" width="12%" height="auto">
         <nav>
-            <ul>
-                <li><a href="index.html">Homepage</a></li>
+            <ul id="navlinks">
+                <li><a href="HomePage.html">Home</a></li>
                 <li><a href="AboutUs.html">About Us</a></li>
-                <li><a href="AvailableAnimals.html">Available Animals</a></li>
-                <li><a href="application.html">Adoption Application</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="AvailableAnimals.html">Available Pets</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="pet-profile">
-            <h1>Meet Our Pet</h1>
-            <img class="pet-image" src="assets/images/Max_dog.jpg" alt="Max Dog">
+    <main id="petprofile">
+        <div class="back">
+            <a href="AvailableAnimals.html"><button>Back</button></a>
+        </div>
+        
+        <div class="petprofile">
+            <img class="pet-image" id="maxpic" src="https://i.ibb.co/M86Sb47/pexels-melissa-jansen-van-rensburg-1954515.jpg" alt="Max" width=300px height=300px>
             <div class="pet-details">
-                <p><strong>Name:</strong> Max</p>
-                <p><strong>Gender:</strong> Male</p>
-                <p><strong>Status:</strong> Available for Adoption</p>
-                <p><strong>Species:</strong> Dog</p>
-                <p><strong>Rescue ID:</strong> WMC123</p>
-                <p><strong>Color:</strong> Brown and White</p>
-                <p><strong>Current Size:</strong> Medium</p>
-                <p><strong>Current Age:</strong> 2 years</p>
-                <p><strong>Housetrained:</strong> Yes</p>
-                <p><strong>Exercise Need:</strong> Moderate</p>
-                <p><strong>Grooming Needs:</strong> Low</p>
-                <p><strong>Shedding Amount:</strong> Low</p>
-                <p><strong>Owner Experience Needed:</strong> Novice</p>
-                <p><strong>Reaction to New People:</strong> Friendly</p>
-                <p><strong>Description:</strong> Max is a friendly and playful dog who loves long walks and cuddles on the couch. He's looking for a loving home where he can be a loyal companion.</p>
-                <a href="ApplicationForm.html" class="apply-button">Apply to Adopt Max</a>
+                <h1>Max</h1>
+                <div class="pettags">
+                    <button>WMC-123</button></a>
+                    <button>AVAILABLE FOR ADOPTION</button></a>
+                </div>
+
+                <p>Max is a friendly and playful dog who loves long walks, cuddles on the couch, and playing frisbee. 
+                He's looking for a loving, high-energy home with lots of open space where he can be a loyal companion.</p>
+                
+                <div class="moredetails">
+                    <div class="lefthand">
+                        <p><strong>Age</strong> 2 years</p>
+                        <p><strong>Gender</strong> Male</p>
+                        <p><strong>Color</strong> Brown & white</p>
+                        <p><strong>Size</strong> Small</p>
+                        <p><strong>Owner experience</strong> Novice</p>
+                        <p><strong>Housetrained</strong> Yes</p>
+                    </div>
+
+                    <div class="righthand">
+                        <p><strong>Exercise needs</strong> High</p>
+                        <p><strong>Shedding</strong> Low</p>
+                        <p><strong>Grooming</strong> Low</p>
+                        <p><strong>Friendly with kids?</strong> Yes</p>
+                        <p><strong>New people?</strong> Yes</p>
+                        <p><strong>Other pets?</strong> Yes</p>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+
+        <div class="applycontainer">
+            <a href="ApplicationForm.html" class="apply-button"><button id="apply-button">Apply to adopt Max</button></a>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2023 WoofMeow Center | Contact Us: info@woofmeowcenter.org</p>
+    <footer id="footer">
+        <p>&copy; 2023 WoofMeow Center | Contact us: info@woofmeowcenter.org</p>
     </footer>
+
 </body>
 </html>
