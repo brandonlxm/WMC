@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Profile - WoofMeow Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .back {
+            padding: 30px 340px;
+            padding-bottom: 10px;
+        }
+
+        .back button {
+            padding: 5px 13px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background-color: #5d6189;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .back button:hover {
+            background-color:#5d6189c2;
+        }
+        
+        .pettags {
+            display: flex;
+            gap: 8px;
+            padding-bottom: 10px;
+            padding-top: 2px;
+        }
+
+        .pettags button {
+            font-size: 10px;
+            padding: 3px 10px;
+            background-color: rgb(180, 200, 210);
+            border: none;
+            border-radius: 10px;
+        }
+
+        .petprofile {
+            font-size: 13px;
+            display: flex;
+            margin: 15px 340px;
+            margin-top: 0px;
+            background-color: rgba(0, 0, 0, 0.058);
+            padding: 20px 20px;
+            border-radius: 30px;
+            gap: 20px;
+        }
+
+        .pet-details p {
+            color: #392e2c;
+        }
+
+        .applycontainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
+        
+        #apply-button {
+            padding: 5px 15px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background-color: #b86648;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #apply-button:hover {
+            background-color: #b86648c2;
+        }
+
+        #petpic {
+            border-radius: 25px;
+        }
+
+        .moredetails {
+            padding-top: 7px;
+            display: flex;
+            gap: 25px;
+            color: #392e2c;
+        }
+    </style>
+
+    <body> 
+    <section id="header">
+        <img src="https://i.ibb.co/r6zTD1X/wooflogo.png" alt="logo" width=12% height="auto">
+
+        <div>
+            <ul id="navlinks">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="AvailableAnimals.html">Available Pets</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <a href="ApplicationForm.html"><button>Apply to Adopt</button></a>
+    </section>
+
+    <section id="petprofile">
+        <div class="back">
+            <a href="AvailableAnimals.html"><button>Back</button></a>
+        </div>
+        
+        <div class="petprofile">
+            <img class="pet-image" id="petpic" src="assets/images/pet6.jpg" alt="Pet" width=300px height=300px>
+            <div class="pet-details">
+                <h1>Oliver</h1>
+                <div class="pettags">
+                    <button>WMC-128</button></a>
+                    <button>AVAILABLE FOR ADOPTION</button></a>
+                </div>
+
+                <p>Oliver is a loyal and warm-hearted golden retriever. He is a gentle giant 
+                    and a social butterfly, and is sure to be a new favorite with anyone who 
+                    visits. Oliver’s favorite things to do are playing fetch and running around, 
+                    so he would do best in a home with a large and secure yard.  </p>
+                
+                <div class="moredetails">
+                    <div class="lefthand">
+                        <p><strong>Age</strong> 2 years</p>
+                        <p><strong>Gender</strong> Male</p>
+                        <p><strong>Color</strong> Golden</p>
+                        <p><strong>Size</strong> Large</p>
+                        <p><strong>Owner experience</strong> Novice</p>
+                        <p><strong>Housetrained</strong> Yes</p>
+                    </div>
+
+                    <div class="righthand">
+                        <p><strong>Exercise needs</strong> High</p>
+                        <p><strong>Shedding</strong> High</p>
+                        <p><strong>Grooming</strong> Medium</p>
+                        <p><strong>Friendly with kids?</strong> Yes</p>
+                        <p><strong>New people?</strong> Yes</p>
+                        <p><strong>Other pets?</strong> Yes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="applycontainer">
+            <a href="ApplicationForm.html" class="apply-button"><button id="apply-button">Apply to adopt Oliver</button></a>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>&copy; 2023 WoofMeow Center | Contact us: info@woofmeowcenter.org</p>
+    </footer>
+
+</body>
+</html>
