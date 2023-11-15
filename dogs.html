@@ -103,6 +103,8 @@ footer {
             // Get the selected option value
             var selectedOption = dropdown.options[dropdown.selectedIndex].value;
             
+            localStorage.setItem('selectedAnimal', selectedOption);
+
             // Redirect to the selected animal page
             if (selectedOption === "All") {
                 window.location.href = "AvailableAnimals.html"; // Link to the all pets page
@@ -115,12 +117,18 @@ footer {
             }
          
     }
-    // Add event listener to the dropdown
-    var animalDropdown = document.getElementById("animal-dropdown");
-    animalDropdown.addEventListener("change", selectAnimal);
+    function setInitialSelection() {
+        // Get the selected value from local storage
+        var selectedOption = localStorage.getItem('selectedAnimal');
 
-    // Set the initial selected option text to "All"
-    animalDropdown.options[0].text = "All";
+        // Set the selected value in the dropdown
+        if (selectedOption) {
+            document.getElementById("animal-dropdown").value = selectedOption;
+        }
+    }
+
+    // Call the function when the page loads
+    window.onload = setInitialSelection;
     </script>
     <main>
 
