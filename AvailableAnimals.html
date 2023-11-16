@@ -10,12 +10,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; 
 }
 
 header {
-    background-color: #92c292;
-    color: #fff;
+    background-color: #92c292; 
+    color: #fff; 
     padding: 10px 0;
     text-align: center;
 }
@@ -41,30 +41,34 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 20px; /* Added padding to the main container */
 }
 
 .animal-profile {
-    background-color: #fff;
+    flex: 0 0 calc(20% - 40px); /* Adjust the flex-basis to account for margin */
+    background-color: #fff; 
     padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px; /* Margin between cards */
+    border-radius: 50px;  
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    text-align: center; 
 }
 
 .animal-profile img {
-    max-width: 150px;
+    max-width: 200px; /* Adjust image size */
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px; /* Rounded corners for images */
 }
 
 .cta-button {
-    display: inline-block;
+    display: block; /* Changed to block to allow margin auto to center the button */
     padding: 10px 20px;
     background-color: #333;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    margin: 5px auto; /* Auto margins center the block element horizontally */
+    margin-top: 50px; /* Increase the top margin to push the button lower */
 }
 
 .cta-button:hover {
@@ -74,8 +78,8 @@ nav a {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #f0eaea;
-    color: #fff;
+    background-color: #f0eaea; /* Adjusted to a lighter shade for contrast */
+    color: #333; /* Changed text color for readability */
 }
 
     </style>
