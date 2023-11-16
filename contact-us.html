@@ -4,81 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact-us</title>
-    <link rel="stylesheet" href="styles.css">
-<style>
-    /* Add your CSS styles here, including styles for the animal profiles */
-body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-background-color: #f4f4f4;
-}
-
-header {
-background-color: #92c292;
-color: #fff;
-padding: 10px 0;
-text-align: center;
-}
-
-nav ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-}
-
-nav ul li {
-display: inline;
-margin-right: 20px;
-}
-
-nav a {
-text-decoration: none;
-color: #fff;
-font-weight: bold;
-}
-
-.main {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-}
-
-.animal-profile {
-background-color: #fff;
-padding: 20px;
-margin: 20px;
-border-radius: 5px;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.animal-profile img {
-max-width: 100%;
-border-radius: 5px;
-}
-
-.cta-button {
-display: inline-block;
-padding: 10px 20px;
-background-color: #333;
-color: #fff;
-text-decoration: none;
-border-radius: 5px;
-margin-top: 20px;
-}
-
-.cta-button:hover {
-background-color: #555;
-}
-
-footer {
-text-align: center;
-padding: 10px;
-background-color: #333;
-color: #fff;
-}
-
-</style>
+    <link rel="stylesheet" href="contact-us.css">
 </head>
 <body>
     <a href="index.html">
@@ -96,34 +22,33 @@ color: #fff;
     </nav>
 </header>
 <body>
-    <div class="container">
-        <h2>Contact Information</h2>
-        <p>If you have any questions or would like to get in touch with us, please feel free to reach out:</p>
-
-        <div class="contact-form">
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
-                </div>
-
-                <div class="form-group">
-                    <input type="submit" value="Send Message">
-                </div>
-            </form>
-        </div>
+    <small>Enter message (optional) and click button "Send"</small>
+<div class="wrapper centered">
+  <article class="letter">
+    <div class="side">
+      <h1>Contact us</h1>
+      <p>
+        <textarea placeholder="Your message"></textarea>
+      </p>
     </div>
+    <div class="side">
+      <p>
+        <input type="text" placeholder="Your name" >
+      </p>
+      <p>
+        <input type="email" placeholder="Your email" >
+      </p>
+      <p>
+        <button id="sendLetter">Send</button>
+      </p>
+    </div>
+  </article>
+  <div class="envelope front"></div>
+  <div class="envelope back"></div>
+</div>
+<p class="result-message centered">Thank you for your message</p>
 </body>
+<script src="contact-us.js"></script>
 <footer>
     <iframe src="WebsiteFooter.html" frameborder="5" width="100%" height="350"></iframe>
 </footer>
