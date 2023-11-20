@@ -145,37 +145,14 @@ color: #fff;
     </nav>
 </header>
 <body>
-    <div class="container">
-        <h2>Contact Information</h2>
-        <p>If you have any questions or would like to get in touch with us, please feel free to reach out:</p>
+        <div><h2>Thank you for your submission!</h2></div>
 
-        <div class="contact-form">
-            <form action="contact-us-thankyou.html" method="GET">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
-                </div>
-
-                <div>
-                    <button onclick="send()"> Send Message</button>
-                </div>
-            </form>
-            <div id="thankYouMessage" style="display: none;">
-                <p>Thank you for your submission!</p>
+            <div>
+                <a href="contact-us.html" class="button-link">
+                    <button>Submit another form!</button>
+                </a>
             </div>
-            </div>
-        </div>
-    </div>
+            
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
