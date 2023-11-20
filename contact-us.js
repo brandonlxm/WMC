@@ -12,9 +12,7 @@ const firebaseConfig = {
   const dbRef = firebase.database().ref();
 
   const detailsRef = dbRef.child('userdetails');
-detailsRef.on("child_added", function(snapshot, prevChildKey) {
-var newPost = snapshot.val();
-});
+
 function submitForm(){
 var name = document.getElementById("name").value;
 var email = document.getElementById("email").value;
@@ -30,10 +28,10 @@ message: message,
   document.getElementById("formContainer").style.display = "none";
   document.getElementById("thankYouMessage").style.display = "block";
 })
+
 .catch(function (error) {
   console.error("Error submitting form:", error);
 });
-}
 
 function resetForm() {
 // Reset the form and show the form container
