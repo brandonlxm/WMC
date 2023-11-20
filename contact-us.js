@@ -29,13 +29,3 @@ message: message,
   document.getElementById("thankYouMessage").style.display = "block";
 })
 
-.catch(function (error) {
-  console.error("Error submitting form:", error);
-});
-
-function resetForm() {
-// Reset the form and show the form container
-document.getElementById("contactForm").reset();
-document.getElementById("formContainer").style.display = "block";
-document.getElementById("thankYouMessage").style.display = "none";
-}
