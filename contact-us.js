@@ -25,3 +25,20 @@ email: email,
 message: message,
 });
 }
+function submitForm() {
+  // Get form values (you can use these values for further processing if needed)
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  // Clear the form after successful submission
+  document.getElementById('contactForm').reset();
+
+  // Show the thank you message
+  document.getElementById('thankYouMessage').style.display = 'block';
+
+  // Optionally, you can use a timeout to hide the thank you message after a certain time
+  setTimeout(() => {
+      document.getElementById('thankYouMessage').style.display = 'none';
+  }, 5000); // 5000 milliseconds (5 seconds) in this example
+}
