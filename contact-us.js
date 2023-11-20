@@ -25,15 +25,3 @@ email: email,
 message: message,
 });
 }
-function showThankYou() {
-
-  // Clear the form after successful submission
-  document.getElementById('contactForm').reset();
-
-  // Show the thank you message
-  document.getElementById('thankYouMessage').style.display = 'block';
-
-  setTimeout(() => {
-      document.getElementById('thankYouMessage').style.display = 'none';
-  }, 5000);
-}
