@@ -115,11 +115,17 @@ background-color: #555;
             border-radius: 5px;
         }
 
-        button {
+        .button-container {
+            margin-top: 20px;
             background-color: #92c292;
             color: #fff;
             cursor: pointer;
         }
+
+        .thank-you-container {
+        margin-top: 20px;
+        }
+
 footer {
 text-align: center;
 padding: 10px;
@@ -145,9 +151,11 @@ color: #fff;
     </nav>
 </header>
 <body>
-        <div><h2>Thank you for your submission!</h2></div>
+    <div class="thank-you-container">
+        <h2>Thank you for your submission!</h2>
+    </div>
 
-            <div>
+            <div class="button-container">
                 <a href="contact-us.html" class="button-link">
                     <button>Submit another form!</button>
                 </a>
