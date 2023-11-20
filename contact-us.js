@@ -8,33 +8,20 @@ const firebaseConfig = {
   appId: "1:49546601461:web:d579ee1f7201ddb9bef6bc"
 };
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+const app = firebase.initializeApp(firebaseConfig);
+const dbRef = firebase.database().ref();
 
-// Reference to the Firebase database
-const database = firebase.database();
-
-// Reference to the 'contacts' node in the database
-const contactsRef = database.ref('contacts');
-
-// Handle form submission
-document.getElementById('contactForm').addEventListener('submit', function (event) {
-  event.preventDefault();
-
-  // Get form values
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
-
-  // Push the form data to the 'contacts' node in the database
-  contactsRef.push({
-    name: name,
-    email: email,
-    message: message
-  });
-
-  // Clear the form after submission
-  document.getElementById('contactForm').reset();
-
-  alert('Form submitted successfully!');
+const detailsRef = dbRef.child('userdetails');
+detailsRef.on("child_added", function(snapshot, prevChildKey) {
+var newPost = snapshot.val();
 });
+function send(){
+var name = document.getElementById("name").value;
+var email = document.getElementById("email").value;
+var message = document.getElementById("message").value;
+detailsRef.push().set({
+name: name,
+email: email,
+message: message,
+});
+}

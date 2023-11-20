@@ -115,7 +115,7 @@ background-color: #555;
             border-radius: 5px;
         }
 
-        input[type="submit"] {
+        button {
             background-color: #92c292;
             color: #fff;
             cursor: pointer;
@@ -150,7 +150,7 @@ color: #fff;
         <p>If you have any questions or would like to get in touch with us, please feel free to reach out:</p>
 
         <div class="contact-form">
-            <form id="contactForm" action="#" method="post" onsubmit="submitForm(); return false;">
+            <form action="contact-us.html" method="POST">
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
@@ -167,13 +167,16 @@ color: #fff;
                 </div>
 
                 <div class="form-group">
-                    <input type="submit" value="Send Message">
+                    <button onclick="send()"> Send Message</button>
                 </div>
             </form>
         </div>
         <div id="thankYouMessage" style="display: none;">
             <p>Thank you for your submission!</p>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
     <script src="contact-us.js"></script>
 </body>
 <footer>
