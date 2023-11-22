@@ -13,30 +13,6 @@
             background-color: #f4f4f4; 
         }
         
-        header {
-            background-color: #92c292; 
-            color: #fff; 
-            padding: 10px 0;
-            text-align: center;
-        }
-        
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-        }
-        
         .main {
             display: flex;
             flex-wrap: wrap;
@@ -85,20 +61,22 @@
  </style>
 </head>
 <body>
-    <a href="index.html">
-        <img src="assets/images/logo.png" alt="Homepage logo" >
-    </a>
-    <header>
-        <nav>
-            <ul>
+    <section id="header">
+        <a href="index.html">
+        <img src="https://i.ibb.co/r6zTD1X/wooflogo.png" alt="logo" width=12% height="auto">
+        </a>
+        <div>
+            <ul id="navlinks">
                 <li><a href="index.html">Homepage</a></li>
                 <li><a href="AboutUs.html">About Us</a></li>
-                <li><a href="AvailableAnimals.html">Available Animals</a></li>
-                <li><a href="ApplicationForm.html">Adoption Application</a></li>
+                <li><a href="AvailableAnimals.html">Available Pets</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+        <a href="ApplicationForm.html"><button>Adoption Application</button></a>
+    </section>
+
+
     <script>
         // Function to handle the dropdown selection
         function selectAnimal() {
