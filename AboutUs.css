@@ -5,6 +5,28 @@ body {
     background-color: #f4f4f4;
 }
 
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: -0.25px;
+    text-decoration: none;
+    color: #392e2c;
+}
+
+h1 {
+    font-size: 45px;
+    line-height: 60px;
+    color: #392e2c;
+}
+
+body { 
+    background-color:white;
+}
+
 #header {
     display: flex;
     align-items: center;
