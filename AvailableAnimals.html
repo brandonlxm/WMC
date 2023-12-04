@@ -6,6 +6,7 @@
     <title>Available Animals</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -20,40 +21,68 @@ body {
     padding: 20px; /* Added padding to the main container */
 }
 
+.profileheader {
+    background-color: rgb(180, 92, 63);
+}
+
+.headertext {
+    font-size: 50px;
+    color: white;
+    margin-left: 50px;
+}
+
 .animal-profile {
-    flex: 0 0 calc(20% - 40px); /* Adjust the flex-basis to account for margin */
+    width: 300px;
     background-color: #fff; 
-    padding: 20px;
-    margin: 20px; /* Margin between cards */
+    padding: 20px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 25px; /* Margin between cards */
     border-radius: 50px;  
     box-sizing: border-box; /* Include padding and border in the element's total width */
     text-align: center; 
+    font-size: 14px;
+}
+
+form {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.profiles { 
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    margin: 23px;
 }
 
 .animal-profile img {
-    max-width: 200px; /* Adjust image size */
+    width: 200px; /* Adjust image size */
+    height: 200px;
     height: auto;
-    border-radius: 10px; /* Rounded corners for images */
+    border-radius: 15px; /* Rounded corners for images */
 }
 
 .cta-button {
     display: block; /* Changed to block to allow margin auto to center the button */
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: rgb(96, 126, 158);
+    color: #ffffff;
     text-decoration: none;
-    border-radius: 5px;
+    width: 200px;
+    border-radius: 15px;
     margin: 5px auto; /* Auto margins center the block element horizontally */
-    margin-top: 50px; /* Increase the top margin to push the button lower */
+    margin-top: 10px; /* Increase the top margin to push the button lower */
 }
 
 .cta-button:hover {
-    background-color: #555;
+    background-color: rgba(96, 126, 158, 0.781);
 }
 
 footer {
-            background-color: #e8e3e3;
-            color: #0c0c0c;
+            background-color: #366041;
+            color: #ffffff;
             text-align: left;
             padding: 10px;
         }
@@ -90,13 +119,15 @@ footer {
 
     .footer-nav a {
         text-decoration: none;
-        color: #333; /* Adjust the link color as needed */
-        font-weight: bold;
+        color: #ffffff; /* Adjust the link color as needed */
+        font-weight: 500;
+        font-size: 14px;
     }
 
     /* Contact Information styles */
     .footer-contact p {
         margin: 5px 0;
+        font-size: 14px;
     }
 
     </style>
@@ -116,6 +147,13 @@ footer {
     <a href="ApplicationForm.html"><button>Adoption Application</button></a>
 </section>
 
+    <div class="profileheader">
+        <div class="headertext">
+            <p> </p><br>
+            <p><strong>Available Pets</strong></p>
+        </div>
+    </div>
+    
     <script>
         // Function to handle the dropdown selection
         function selectAnimal() {
@@ -166,15 +204,14 @@ footer {
         </form>
 
         <!--Each Available pet's name and intro-->
-
+    
+        <div class="profiles">
         <section class="animal-profile">
             <img src="https://i.ibb.co/M86Sb47/pexels-melissa-jansen-van-rensburg-1954515.jpg" alt="Max Dog">
             <h2><a href="MaxProfilepage.html">Max</a></li></h2>
             <p>Gender: Male</p>
             <p>Status: Available</p>
             <p>Species: Dog</p>
-            <!-- Add more details about Pet 1 -->
-            <p>Description: Max is a friendly and playful dog who loves long walks, cuddles on the couch, and playing frisbee. </p>
             <a href="ApplicationForm.html" class="cta-button">Apply to Adopt</a>
         </section>
 
@@ -184,17 +221,15 @@ footer {
             <p>Gender: Female</p>
             <p>Status: Available</p>
             <p>Species: Dog</p>
-            <p>Description: Daisy is an energetic Goldon Retriever. She enjoys playing fetch and is looking for an active family.</p>
             <a href="ApplicationForm.html" class="cta-button">Apply to Adopt</a>
         </section>
 
         <section class="animal-profile">
             <img src="assets/images/pet3.jpg" alt="Pet 3">
-            <h2><a href="BROWNIE.html">Browine</a></li></h2>
+            <h2><a href="BROWNIE.html">Brownie</a></li></h2>
             <p>Gender: Female</p>
             <p>Status: Available</p>
             <p>Species: Cat</p>
-            <p>Description: Browine is a lovely female cat that is always love play with people. </p>
             <a href="ApplicationForm.html" class="cta-button">Apply to Adopt</a>
         </section>
 
@@ -204,7 +239,6 @@ footer {
             <p>Gender: Male</p>
             <p>Status: Available</p>
             <p>Species: Dog</p>
-            <p>Description: Rocky is an energetic Border Collie. He loves playing fetch and would be a great companion for an active family.</p>
             <a href="ApplicationForm.html" class="cta-button">Apply to Adopt</a>
         </section>
 
@@ -214,7 +248,6 @@ footer {
             <p>Gender: Female</p>
             <p>Status: Available</p>
             <p>Species: Cat</p>
-            <p>Description: Luna is a gentle Siamese cat. She enjoys sunbathing by the window and is looking for a cozy home.</p>
             <a href="ApplicationForm.html" class="cta-button">Apply to Adopt</a>
         </section>
 
@@ -224,7 +257,6 @@ footer {
             <p>Gender: Male</p>
             <p>Status: Available</p>
             <p>Species: Dog</p>
-            <p>Description: Oliver is a loyal Golden Retriever. He is well-trained and would make a loving addition to any family.</p>
             <a href="ApplicationForm.html" class="cta-button">Apply to Adopt</a>
         </section>
     
@@ -234,7 +266,6 @@ footer {
             <p>Gender: Female</p>
             <p>Status: Available</p>
             <p>Species: Cat</p>
-            <p>Description: Whiskers is a sweet and playful tabby cat. She loves chasing toys and cuddling on the couch.</p>
             <a href="ApplicationForm.html" class="cta-button">Apply to Adopt</a>
         </section>
         <section class="animal-profile" data-species="cat">
@@ -243,28 +274,29 @@ footer {
             <p>Gender: Male</p>
             <p>Status: Available</p>
             <p>Species: Cat</p>
-            <p>Description: Gizmo is a curious Siamese cat. He enjoys exploring and will keep you entertained with his antics.</p>
             <a href="ApplicationForm.html" class="cta-button">Apply to Adopt</a>
         </section>
+       
         <section class="animal-profile" data-species="other">
             <img src="assets/images/rabbit1.jpg" alt="Rabbit 1">
             <h2><a href="HOPPY.html">Hoppy</a></li></h2>
             <p>Gender: Female</p>
             <p>Status: Available</p>
             <p>Species: Rabbit</p>
-            <p>Description: Hoppy is a friendly and gentle rabbit. She enjoys hopping around and nibbling on fresh greens.</p>
             <a href="ApplicationForm.html" class="cta-button">Apply to Adopt</a>
         </section>
+        
         <section class="animal-profile" data-species="other">
             <img src="assets/images/rabbit2.jpg" alt="Rabbit 2">
             <h2><a href="THUMPER.html">Thumper</a></li></h2>
             <p>Gender: Male</p>
             <p>Status: Available</p>
             <p>Species: Rabbit</p>
-            <p>Description: Thumper is an outgoing and curious rabbit. He loves to explore and play with toys.</p>
             <a href="ApplicationForm.html" class="cta-button">Apply to Adopt</a>
         </section>
+    </div>
         <!-- Add profiles for more pets (Pet 3, Pet 4, Pet 5) following the same structure -->
+
 
     </main>
 
@@ -272,7 +304,7 @@ footer {
         <div class="footer-container">
             <!-- Logo -->
             <div class="footer-logo">
-                <img src="https://i.ibb.co/r6zTD1X/wooflogo.png" alt="logo" width=100% height="auto"> <!-- Insert path to image link here -->
+                <img src="https://i.ibb.co/QJqvXt4/unnamed.png" alt="logo" width=100% height="auto"> <!-- Insert path to image link here -->
             </div>
     
             <!-- Navigation Links -->
