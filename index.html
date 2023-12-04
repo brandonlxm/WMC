@@ -16,29 +16,40 @@
 
         /* Styling for homepage (index.html) */
         #intro {
-            text-align: center;
             padding: 50px;
+            padding-left: 80px;
+            padding-right: 80px;
             background-color: #fff;
-            margin: 20px;
-            border-radius: 5px;
+            display: flex;
+            margin-bottom: 120px;
+            margin-right: 250px;
+            margin-left: 250px;
+            border-radius: 50px;
+            border-style: solid;
+
+        }
+
+        .green {
+            color:rgb(156, 94, 94);
         }
 
         .cta-button {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
+            color: rgb(255, 255, 255);
+            background-color: #b86648;
+            border-radius: 50px;
             text-decoration: none;
-            border-radius: 5px;
             margin-top: 20px;
         }
 
         .cta-button:hover {
-            background-color: #555;
+            background-color: #b86648bd;
         }
+
         footer {
-            background-color: #e8e3e3;
-            color: #0c0c0c;
+            background-color: #366041;
+            color: #ffffff;
             text-align: left;
             padding: 10px;
         }
@@ -75,16 +86,18 @@
 
     .footer-nav a {
         text-decoration: none;
-        color: #333; /* Adjust the link color as needed */
-        font-weight: bold;
+        color: #ffffff; /* Adjust the link color as needed */
+        font-weight: 500;
+        font-size: 14px;
     }
 
     /* Contact Information styles */
     .footer-contact p {
         margin: 5px 0;
+        font-size: 14px;
+        color: #ffffff;
     }
 
-        /* Additional CSS styles go here */
     </style>
 </head>
 <section id="header">
@@ -103,18 +116,23 @@
 </section>
     
 <main>
-        <section id="intro">
-            <h1>Welcome to WoofMeow Center</h1>
-            <p>Your trusted partner in finding loving homes for animals.</p>
-            <a href="AvailableAnimals.html" class="cta-button">Browse Available Animals</a>
-        </section>
+        <div id="intro">
+           <img src="https://i.ibb.co/SxmnGdn/m0g-3r-cover.png" height=300px>
+            <div class="welcome">
+                <br>
+                <br>
+                <h1>Welcome to <br> WoofMeow Center<span class="green">!</span></h1>
+                <p>Your trusted partner in finding loving homes for animals.</p>
+                <a href="AvailableAnimals.html" class="cta-button">Browse Available Animals</a>
+            </div>
+        </div>
     </main>
 
     <footer>
         <div class="footer-container">
             <!-- Logo -->
             <div class="footer-logo">
-                <img src="https://i.ibb.co/r6zTD1X/wooflogo.png" alt="logo" width=100% height="auto"> <!-- Insert path to image link here -->
+                <img src="https://i.ibb.co/QJqvXt4/unnamed.png" alt="logo" width=100% height="auto"> <!-- Insert path to image link here -->
             </div>
     
             <!-- Navigation Links -->
