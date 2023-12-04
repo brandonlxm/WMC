@@ -76,7 +76,7 @@
             background-color: #b86648c2;
         }
 
-        #petpic {
+        .pet-image {
             border-radius: 25px;
         }
 
@@ -89,6 +89,14 @@
         footer {
             background-color: #e8e3e3;
             color: #0c0c0c;
+            text-align: left;
+            padding: 10px;
+        }
+
+        /* Additional styles for your footer content */
+        footer {
+            background-color: #366041;
+            color: #ffffff;
             text-align: left;
             padding: 10px;
         }
@@ -125,8 +133,34 @@
 
     .footer-nav a {
         text-decoration: none;
-        color: #333; /* Adjust the link color as needed */
-        font-weight: bold;
+        color: #ffffff; /* Adjust the link color as needed */
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    /* Contact Information styles */
+    .footer-contact p {
+        margin: 5px 0;
+        font-size: 14px;
+        color: #ffffff;
+    }
+
+    /* Navigation Links styles */
+    .footer-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    .footer-nav li {
+        margin-right: 20px;
+    }
+
+    .footer-nav a {
+        text-decoration: none;
+        color: #ffffff; /* Adjust the link color as needed */
+        font-weight: 500;
     }
 
     /* Contact Information styles */
@@ -135,19 +169,20 @@
     }
     </style>
 
-</head>
 <body> 
-    <header>
-        <img src="https://i.ibb.co/r6zTD1X/wooflogo.png" alt="logo" width="12%" height="auto">
-        <nav>
+    <section id="header">
+        <img src="https://i.ibb.co/r6zTD1X/wooflogo.png" alt="logo" width=12% height="auto">
+        <div>
             <ul id="navlinks">
                 <li><a href="index.html">Homepage</a></li>
                 <li><a href="AboutUs.html">About Us</a></li>
                 <li><a href="AvailableAnimals.html">Available Pets</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+
+        <a href="ApplicationForm.html"><button>Apply to Adopt</button></a>
+    </section>
 
     <main id="petprofile">
         <div class="back">
@@ -197,7 +232,7 @@
         <div class="footer-container">
             <!-- Logo -->
             <div class="footer-logo">
-                <img src="https://i.ibb.co/r6zTD1X/wooflogo.png" alt="logo" width=100% height="auto"> <!-- Insert path to image link here -->
+                <img src="https://i.ibb.co/QJqvXt4/unnamed.png" alt="logo" width=100% height="auto"> <!-- Insert path to image link here -->
             </div>
     
             <!-- Navigation Links -->
