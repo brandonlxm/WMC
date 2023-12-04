@@ -200,52 +200,6 @@ background-color: #555;
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
     <script src="contact-us.js"></script>
-    <!-- FullCalendar CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
-
-  <!-- jQuery and Moment.js -->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-
-  <!-- FullCalendar JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
-
-  <style>
-    #calendar {
-      max-width: 500px;
-      margin: 0 auto;
-    }
-  </style>
-</head>
-<body>
-
-  <div id="calendar"></div>
-
-  <script>
-    $(document).ready(function() {
-      $('#calendar').fullCalendar({
-        header: {
-          left: 'prev,next today',
-          center: 'title',
-          right: 'month,basicWeek,basicDay'
-        },
-        defaultView: 'month',
-        eventLimit: true, // allow "more" link when too many events
-        events: [
-          {
-            title: 'Fundrising Event',
-            start: '2023-12-15'
-          },
-          {
-            title: 'Mass Adoption Event',
-            start: '2023-12-06',
-            end: '2023-12-09'
-          }
-          // Add more events as needed
-        ]
-      });
-    });
-  </script>
 </body>
 <footer>
     <div class="footer-container">
