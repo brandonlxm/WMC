@@ -6,54 +6,86 @@
     <title>Available Animals</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4; 
-        }
-        
-        .main {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px; 
-        }
-        
-        .animal-profile {
-            flex: 0 0 calc(20% - 40px); 
-            background-color: #fff; 
-            padding: 20px;
-            margin: 20px; 
-            border-radius: 50px;  
-            box-sizing: border-box; 
-            text-align: center; 
-        }
-        
-        .animal-profile img {
-            max-width: 200px; 
-            height: auto;
-            border-radius: 10px; 
-        }
-        
-        .cta-button {
-            display: block; 
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 5px auto; 
-            margin-top: 50px; 
-        }
-        
-        .cta-button:hover {
-            background-color: #555;
-        }
-        
-        footer {
-            background-color: #e8e3e3;
-            color: #0c0c0c;
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px; /* Added padding to the main container */
+}
+
+.profileheader {
+    background-color: rgb(195, 113, 84);
+}
+
+.headertext {
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+.animal-profile {
+    width: 300px;
+    background-color: #fff; 
+    padding: 20px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 25px; /* Margin between cards */
+    border-radius: 50px;  
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    text-align: center; 
+    font-size: 14px;
+}
+
+form {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.profiles { 
+    display: flex;
+    justify-content: left;
+    padding-top: 20px;
+    margin: 23px;
+}
+
+.animal-profile img {
+    width: 200px; /* Adjust image size */
+    height: 200px;
+    height: auto;
+    border-radius: 15px; /* Rounded corners for images */
+}
+
+.namebutton:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.cta-button {
+    display: block; /* Changed to block to allow margin auto to center the button */
+    padding: 10px 20px;
+    background-color: rgb(96, 126, 158);
+    color: #ffffff;
+    text-decoration: none;
+    width: 145px;
+    border-radius: 50px;
+    margin: 5px auto; /* Auto margins center the block element horizontally */
+    margin-top: 10px; /* Increase the top margin to push the button lower */
+}
+
+.cta-button:hover {
+    background-color: rgba(96, 126, 158, 0.781);
+}
+
+footer {
+            background-color: #366041;
+            color: #ffffff;
             text-align: left;
             padding: 10px;
         }
@@ -90,16 +122,19 @@
 
     .footer-nav a {
         text-decoration: none;
-        color: #333; /* Adjust the link color as needed */
-        font-weight: bold;
+        color: #ffffff; /* Adjust the link color as needed */
+        font-weight: 500;
+        font-size: 14px;
     }
 
     /* Contact Information styles */
     .footer-contact p {
         margin: 5px 0;
+        font-size: 14px;
+        color: #ffffff;
     }
-        
-</style>
+
+    </style>
 </head>
 <section id="header">
     <img src="https://i.ibb.co/r6zTD1X/wooflogo.png" alt="logo" width=12% height="auto">
@@ -115,6 +150,14 @@
     </div>
     <a href="ApplicationForm.html"><button>Adoption Application</button></a>
 </section>
+
+    <div class="profileheader">
+        <div class="headertext">
+            <p> </p><br>
+            <p><strong>Available Pets</strong></p>
+        </div>
+    </div>
+    
     <script>
         // Function to handle the dropdown selection
         function selectAnimal() {
@@ -165,26 +208,29 @@
         </form>
 
         <!--Each Available pet's name and intro-->
+    
+        <div class="profiles">
+       
         <section class="animal-profile" data-species="other">
             <img src="assets/images/rabbit1.jpg" alt="Rabbit 1">
-            <h2><a href="HOPPY.html">Hoppy</a></li></h2>
+            <h2><a href="HOPPY.html" class="namebutton">Hoppy</a></li></h2>
             <p>Gender: Female</p>
             <p>Status: Available</p>
             <p>Species: Rabbit</p>
-            <p>Description: Hoppy is a friendly and gentle rabbit. She enjoys hopping around and nibbling on fresh greens.</p>
             <a href="ApplicationForm.html" class="cta-button">Apply to Adopt</a>
         </section>
         
         <section class="animal-profile" data-species="other">
             <img src="assets/images/rabbit2.jpg" alt="Rabbit 2">
-            <h2><a href="THUMPER.html">Thumper</a></li></h2>
+            <h2><a href="THUMPER.html" class="namebutton">Thumper</a></li></h2>
             <p>Gender: Male</p>
             <p>Status: Available</p>
             <p>Species: Rabbit</p>
-            <p>Description: Thumper is an outgoing and curious rabbit. He loves to explore and play with toys.</p>
             <a href="ApplicationForm.html" class="cta-button">Apply to Adopt</a>
         </section>
+    </div>
         <!-- Add profiles for more pets (Pet 3, Pet 4, Pet 5) following the same structure -->
+
 
     </main>
 
@@ -192,7 +238,7 @@
         <div class="footer-container">
             <!-- Logo -->
             <div class="footer-logo">
-                <img src="https://i.ibb.co/r6zTD1X/wooflogo.png" alt="logo" width=100% height="auto"> <!-- Insert path to image link here -->
+                <img src="https://i.ibb.co/j3pjF5L/lougo.png" alt="logo" width=100% height="auto"> <!-- Insert path to image link here -->
             </div>
     
             <!-- Navigation Links -->
