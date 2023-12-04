@@ -70,13 +70,14 @@
             border-radius: 50px;
             border: none;
             cursor: pointer;
+            margin-bottom: 130px;
         }
 
         #apply-button:hover {
             background-color: #b86648c2;
         }
 
-        #petpic {
+        .pet-image {
             border-radius: 25px;
         }
 
@@ -89,6 +90,14 @@
         footer {
             background-color: #e8e3e3;
             color: #0c0c0c;
+            text-align: left;
+            padding: 10px;
+        }
+
+        /* Additional styles for your footer content */
+        footer {
+            background-color: #366041;
+            color: #ffffff;
             text-align: left;
             padding: 10px;
         }
@@ -125,8 +134,34 @@
 
     .footer-nav a {
         text-decoration: none;
-        color: #333; /* Adjust the link color as needed */
-        font-weight: bold;
+        color: #ffffff; /* Adjust the link color as needed */
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    /* Contact Information styles */
+    .footer-contact p {
+        margin: 5px 0;
+        font-size: 14px;
+        color: #ffffff;
+    }
+
+    /* Navigation Links styles */
+    .footer-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    .footer-nav li {
+        margin-right: 20px;
+    }
+
+    .footer-nav a {
+        text-decoration: none;
+        color: #ffffff; /* Adjust the link color as needed */
+        font-weight: 500;
     }
 
     /* Contact Information styles */
@@ -135,10 +170,9 @@
     }
     </style>
 
-    <body> 
+<body> 
     <section id="header">
         <img src="https://i.ibb.co/r6zTD1X/wooflogo.png" alt="logo" width=12% height="auto">
-
         <div>
             <ul id="navlinks">
                 <li><a href="index.html">Homepage</a></li>
@@ -148,7 +182,7 @@
             </ul>
         </div>
 
-        <a href="ApplicationForm.html"><button>Apply to Adopt</button></a>
+        <a href="ApplicationForm.html"><button>Adoption Application</button></a>
     </section>
 
     <section id="petprofile">
@@ -157,7 +191,7 @@
         </div>
         
         <div class="petprofile">
-            <img class="pet-image" id="petpic" src="assets/images/pet6.jpg" alt="Pet" width=300px height=300px>
+            <img class="pet-image" id="petpic" src="https://i.ibb.co/MR3hyBq/oliver.jpg" alt="Pet" width=300px height=300px>
             <div class="pet-details">
                 <h1>Oliver</h1>
                 <div class="pettags">
@@ -201,7 +235,7 @@
         <div class="footer-container">
             <!-- Logo -->
             <div class="footer-logo">
-                <img src="https://i.ibb.co/r6zTD1X/wooflogo.png" alt="logo" width=100% height="auto"> <!-- Insert path to image link here -->
+                <img src="https://i.ibb.co/j3pjF5L/lougo.png" alt="logo" width=100% height="auto"> <!-- Insert path to image link here -->
             </div>
     
             <!-- Navigation Links -->
